@@ -1,0 +1,33 @@
+version: "3.9"
+
+services:
+  phd2-mqtt-bridge:
+    build: .
+    container_name: phd2-mqtt-bridge
+    restart: unless-stopped
+
+    environment:
+      # PHD2 connection
+      PHD2_HOST: "phd2-hostname-or-ip"
+      PHD2_PORT: "4400"
+
+      # MQTT connection
+      MQTT_HOST: "mqtt-broker-hostname-or-ip"
+      MQTT_PORT: "1883"
+      MQTT_USERNAME: "mqttuser"
+      MQTT_PASSWORD: "mqttpass"
+      MQTT_CLIENT_ID: "phd2_guiding_bridge_1"
+      MQTT_KEEPALIVE: "60"
+
+      # Home Assistant topics
+      DISCOVERY_PREFIX: "homeassistant"
+      BASE_TOPIC: "phd2/guiding_rig1"
+
+      # Device info (unique per rig)
+      DEVICE_ID: "phd2_guiding_rig1"
+      DEVICE_NAME: "PHD2 Guiding (Rig 1)"
+      DEVICE_MANUFACTURER: "Open PHD Guiding"
+      DEVICE_MODEL: "PHD2 Server"
+
+      # Logging
+      LOG_LEVEL: "INFO"
