@@ -176,6 +176,6 @@ If no such messages appear:
 3. Confirm that PHD2 is guiding; GuideStep arrives once per exposure
 
 MQTT sensors appear but never update
-• Check BASE_TOPIC is unique per instance
-• Verify MQTT authentication
-• Confirm Home Assistant MQTT integration is active
+* Check BASE_TOPIC is unique per instance
+* Verify MQTT authentication
+* Confirm Home Assistant MQTT integration is active
