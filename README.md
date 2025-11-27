@@ -137,19 +137,19 @@ After the container starts and publishes discovery messages, Home Assistant shou
 PHD2 Guiding (Rig 1)
 
 Sensors:
-*       PHD2 RA Error
-*       PHD2 Dec Error
-*       PHD2 Total Error
-*       PHD2 dx
-*       PHD2 dy
-*       PHD2 SNR
-*       PHD2 Avg Dist
+* PHD2 RA Error
+* PHD2 Dec Error
+* PHD2 Total Error
+* PHD2 dx
+* PHD2 dy
+* PHD2 SNR
+* PHD2 Avg Dist
 
 Binary sensor:
-*       PHD2 Guide Star Available
+* PHD2 Guide Star Available
 
 Device availability:
-*       Controlled via MQTT LWT on BASE_TOPIC/availability
+* Controlled via MQTT LWT on BASE_TOPIC/availability
 
 ---
 
